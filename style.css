@@ -209,7 +209,7 @@ span {
     }
 
     .seller-wrapper>div {
-        width: 40%;
+        width: 45%;
     }
 
     .seller-wrapper>div>div:nth-child(3)>div:nth-child(1) {
@@ -254,7 +254,9 @@ span {
         outline: none;
         box-shadow: none;
     }
-
+    .carousel {
+      padding-bottom: 50px;
+    }
 
     .seller-wrapper>div>div:nth-child(3)>div:nth-child(1) {
         padding-right: 40%;
