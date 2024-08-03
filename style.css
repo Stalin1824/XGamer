@@ -126,8 +126,9 @@ span {
     overflow: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch; 
+    -webkit-overflow-scrolling: touch; 
 }
+
 
 .cards-wrapper>div {
     scroll-snap-align: center;
@@ -204,6 +205,15 @@ span {
 
     border-radius: 20px;
 }
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 
 @media screen and (max-width: 1200px) {
     .container {
