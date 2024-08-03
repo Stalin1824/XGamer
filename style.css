@@ -8,6 +8,14 @@ a {
     text-decoration: none;
 }
 
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 body,
 h1,
 h2,
@@ -107,75 +115,93 @@ span {
 
 }
 
-.seller {
+.cards {
     background-color: #121212;
-
 }
 
-.seller-wrapper {
-    width: 100%;
+.cards-wrapper {
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
-.seller-wrapper>div {
+.cards-wrapper>div {
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 20%;
     background-color: #1d1d1d;
-    padding: 6px;
+    padding: 10px;
     border-radius: 10px;
 }
 
-.seller-wrapper>div>div:nth-child(1) {
+.cards-wrapper>div:nth-child(7),
+.cards-wrapper>div:nth-child(8) {
+    display: none;
+}
+
+.cards-wrapper>div>div:nth-child(1) {
     position: relative;
+}
+
+.cards-wrapper>div>div:nth-child(1)>img {
+    border-radius: 10px;
 
 }
 
-.seller-wrapper>div>div:nth-child(1)>span {
+.cards-wrapper>div>div:nth-child(1)>span {
     position: absolute;
-    background-color: #d6a838;
-    font-weight: 800;
     font-size: 10px;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 18px;
+    font-weight: 800;
+    color: white;
     top: 25px;
     right: 1px;
+    background-color: #bd971f;
+    padding: 0px 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.seller-wrapper>div>div:nth-child(3)>div:nth-child(1)>p {
-    margin: 0;
+.cards-wrapper>div>div:nth-child(2) {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 800;
+    color: white;
+    height: 30px;
+    width: 140px;
 
 }
 
-
-.seller-wrapper>div>div:nth-child(3) {
+.cards-wrapper>div>div:nth-child(3) {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.seller-wrapper>div>div:nth-child(3)>div:nth-child(1) {
-    border-right: 1px solid green;
-    padding-right: 10%;
+.cards-wrapper>div>div:nth-child(3)>div:nth-child(2) {
+    width: 2px;
+    height: 50px;
+    background-color: #636363;
 }
 
-
-.seller-wrapper>div>div:nth-child(3)>div>span:nth-child(3) {
-    border-bottom: 1px solid #919191;
-    width: 50px;
-    height: 4px;
-    display: block;
+.cards-wrapper>div>div:nth-child(3)>div:nth-child(1)>span:nth-child(3) {
+    width: 46px;
+    height: 2px;
     position: relative;
-    top: -15px;
+    top: -12px;
+    display: block;
+    background-color: #919191;
 }
 
-.seller-wrapper>div>div:nth-child(3)>div:nth-child(2)>a {
-    background-color: #2f8b35;
-    padding: 7px 11px;
-    border-radius: 50px;
+.cards-wrapper>div>div:nth-child(3)>div:nth-child(3) {
+    background-color: #3b9846;
+    padding: 5px 10px;
 
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -216,6 +242,11 @@ span {
         padding-right: 30%;
 
     }
+
+    .cards-wrapper>div:nth-child(7),
+    .cards-wrapper>div:nth-child(8) {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -254,8 +285,9 @@ span {
         outline: none;
         box-shadow: none;
     }
+
     .carousel {
-      padding-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     .seller-wrapper>div>div:nth-child(3)>div:nth-child(1) {
@@ -266,5 +298,39 @@ span {
         width: 95%;
     }
 
+    .cards-wrapper>div {
+        width: 70%;
+    }
 
+    .cards-wrapper>div>div:nth-child(3)>div:nth-child(1) {
+        display: flex;
+        gap: 10px;
+    }
+
+    .cards-wrapper>div>div:nth-child(3)>div:nth-child(1)>p {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+    }
+
+    .cards-wrapper>div>div:nth-child(3)>div:nth-child(1)>span {
+        display: flex;
+        align-items: center;
+    }
+
+    .cards-wrapper>div>div:nth-child(3)>div:nth-child(1)>span:nth-child(3) {
+        top: 12px;
+        right: 55px;
+    }
+
+    .cards-wrapper>div>div:nth-child(3)>div:nth-child(2) {
+        display: none;
+
+    }
+
+    .cards-wrapper>div>div:nth-child(3)>div:nth-child(3) {
+        display: none;
+
+    }
 }
