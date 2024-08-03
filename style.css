@@ -126,6 +126,7 @@ span {
     overflow: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch; 
 }
 
 .cards-wrapper>div {
