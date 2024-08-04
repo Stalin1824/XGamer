@@ -260,6 +260,10 @@ span {
 .cards-wrapper>div:nth-child(8),.cards-wrapper>div:nth-child(9),.cards-wrapper>div:nth-child(10) {
     display: flex;
 }
+.cards-wrapper>div {
+    width: 45%;
+}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -316,7 +320,9 @@ span {
     .cards-wrapper>div {
         width: 70%;
     }
-
+    .cards-wrapper>div:nth-child(9)>div:nth-child(1)>img,.cards-wrapper>div:nth-child(10)>div:nth-child(1)>img {
+        height: 200px;
+    }
     .cards-wrapper>div>div:nth-child(3)>div:nth-child(1) {
         display: flex;
         gap: 10px;
@@ -348,7 +354,5 @@ span {
         display: none;
 
     }
-    .car{
-        border-radius: 20px;
-    }
+   
 }
