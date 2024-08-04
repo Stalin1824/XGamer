@@ -348,4 +348,7 @@ span {
         display: none;
 
     }
+    .car{
+        border-radius: 20px;
+    }
 }
