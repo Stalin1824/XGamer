@@ -122,12 +122,13 @@ span {
 
 .cards-wrapper {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
     overflow: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; 
+   margin-top: 20px;
 }
 
 
@@ -135,7 +136,7 @@ span {
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     width: 20%;
     background-color: #1d1d1d;
     padding: 10px;
@@ -175,7 +176,7 @@ span {
     font-weight: 800;
     color: white;
     height: 30px;
-    width: 140px;
+    width: 160px;
 
 }
 
