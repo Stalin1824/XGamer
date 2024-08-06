@@ -29,13 +29,38 @@ span {
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+.load{
+    background-color: #121212;
+  padding: 30px 0px;
+}
 
 
 
+.nested{
+    text-align: center;
+}
+.loadmorebtn{
+    display:inline;
+    justify-content: center;
+    color: #ffffff;
+    border: 1px solid green;
+    padding:10px;
+    font-weight: 700;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 
 
 
+.loadmorebtn:hover{
+   background-color: green;
+   cursor: pointer;
+   transition:1s;
+}
 
+.load-wrapper{
+      padding-top: 40px;
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -56,11 +81,12 @@ span {
 @media screen and (max-width: 700px) {
     .cards-wrapper{
         gap: 8px;
+        width: 100%;
      }
   
   
     .cards-wrapper>div{
-        width: 48%;
+        width: 95%;
    } 
 
 
