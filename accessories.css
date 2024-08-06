@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.load{
+    background-color: #121212;
+  padding: 30px 0px;
+}
+
+
+
+.nested{
+    text-align: center;
+}
+.loadmorebtn{
+    display:inline;
+    justify-content: center;
+    color: #ffffff;
+    border: 1px solid green;
+    padding:10px;
+    font-weight: 700;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+
+.loadmorebtn:hover{
+   background-color: green;
+   cursor: pointer;
+   transition:1s;
+}
+
+.load-wrapper{
+      padding-top: 40px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .cards-wrapper{
+       justify-content: center;
+       gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .cards-wrapper>div{
+        width: 25%;
+   } 
+   
+  }
+
+
+
+@media screen and (max-width: 700px) {
+    .cards-wrapper{
+        gap: 8px;
+     }
+  
+  
+    .cards-wrapper>div{
+        width: 95%;
+   } 
+
+
+}
+
+
+
