@@ -57,20 +57,25 @@ var menuBar = document.querySelector(".head-wrapper>div:nth-child(1)>div:nth-chi
 var leftToRight = document.querySelector(".head-wrapper>div:nth-child(2)")
 var eachElement = document.querySelectorAll(".head-wrapper>div:nth-child(2)>a")
 
+var searchbox = document.querySelector(".head-wrapper>div:nth-child(3)>div:nth-child(1)")
 
 const mediaQuery = window.matchMedia("(max-width:1200px)")
 
 function handleMediaQuery(e){
      if(e.matches === true){
         menuBar.addEventListener("click",()=>{
+                searchbox.style.display = "none"
             leftToRight.style.left = "-40%"
+     
             leftToRight.style.transition ="1s"
         })
 
         eachElement.forEach((el)=>{
               el.addEventListener("click",()=>{
                 leftToRight.style.left = "-100%"
-                leftToRight.style.transition ="1s"  
+                leftToRight.style.transition ="1s"
+                searchbox.style.display = "flex"
+
               })
         })
 
@@ -83,3 +88,8 @@ function handleMediaQuery(e){
 handleMediaQuery(mediaQuery)
 
 mediaQuery.addEventListener("change",handleMediaQuery)
+
+
+document.getElementById('clickableImage').onclick = function() {
+    window.location.href = 'index.html';
+  };

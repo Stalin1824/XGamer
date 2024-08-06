@@ -515,7 +515,7 @@ span {
     .head-wrapper>div:nth-child(2) {
         position: absolute;
         gap: 20px;
-        top: 25px;
+        top: 50px;
         left:-100%;
         flex-direction: column;
         background-color: rgb(33, 33, 33);
@@ -656,7 +656,7 @@ span {
         width: 100%;
         background-color: black;
         color: #BCBCBC;
-
+        
     }
 
     #one:focus {
@@ -758,6 +758,8 @@ span {
 
     .head-wrapper>div:nth-child(2) {
       width: 90%;
+      top: 25px;
+
     }
     .head-wrapper>div:nth-child(2)>a{
     padding-left:50%;
