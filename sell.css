@@ -10,8 +10,109 @@
 
 
 .sell{
-    padding-top:100px;
+    padding-top:120px;
     background-color: #121212;
     
 }
+.sell-wrapper{
+     padding: 20px 0px;
+}
 
+.sellsearch{
+    background-color: #121212;
+    padding: 30px 0px;
+}
+
+.sellsearch > div > div:nth-child(1){
+       width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+     background-color: #171717; 
+    padding: 6px 20px;
+    border-radius: 15px;
+    border: 1px solid #676767;
+    }
+
+
+.sellsearch > div > div:nth-child(1) >input{
+    border: none;
+     box-shadow: none;
+     width:100%;
+     background-color: #171717; 
+     color: #676767;
+}
+
+.sellsearch > div > div:nth-child(1) >input:focus{
+    outline: none;
+}
+
+.sellsearch-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sellsearch-wrapper>div{
+  width:100%;
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  color: #ffffff; 
+}
+.sellsearch-wrapper>div>div{
+    display: flex;
+   width: 50%;
+   border: 2px solid #676767;         
+   border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+
+.sellsearch-wrapper>div >div>div:nth-child(1){
+    width: 20%;
+
+}
+
+
+ 
+.sellsearch-wrapper>div>div>div:nth-child(2)>p{
+    margin-bottom: 20px;
+    font-weight: 500;
+} 
+
+ .sellsearch-wrapper>div>div>div:nth-child(2)>a{
+   text-decoration: none;
+    color: #ffffff;
+     background-color: #2e54e3;
+     font-weight: 700;
+     padding: 10px;
+     clip-path: polygon(92% 0%, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0% 0%);
+} 
+/* .loaded{
+      text-align: center;
+        margin-top:30px;
+}
+
+.loaded >span{
+    color: #ffffff;
+    background-color: #2e54e3;
+    font-weight: 600;
+    padding: 10px;
+    clip-path: polygon(92% 0%, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0% 0%);
+}  */
+
+
+@media screen and (max-width: 1200px) {
+.sellsearch-wrapper>div{
+    width: 100%;
+    flex-direction: column;
+}   
+
+.sellsearch-wrapper>div>div{
+    width:100%;
+}
+
+
+}
