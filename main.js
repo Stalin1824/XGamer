@@ -53,4 +53,33 @@ item.forEach((el)=>{
 })
 
 
+var menuBar = document.querySelector(".head-wrapper>div:nth-child(1)>div:nth-child(1)>i")
+var leftToRight = document.querySelector(".head-wrapper>div:nth-child(2)")
+var eachElement = document.querySelectorAll(".head-wrapper>div:nth-child(2)>a")
 
+
+const mediaQuery = window.matchMedia("(max-width:1200px)")
+
+function handleMediaQuery(e){
+     if(e.matches === true){
+        menuBar.addEventListener("click",()=>{
+            leftToRight.style.left = "-40%"
+            leftToRight.style.transition ="1s"
+        })
+
+        eachElement.forEach((el)=>{
+              el.addEventListener("click",()=>{
+                leftToRight.style.left = "-100%"
+                leftToRight.style.transition ="1s"  
+              })
+        })
+
+     }
+
+
+}
+
+
+handleMediaQuery(mediaQuery)
+
+mediaQuery.addEventListener("change",handleMediaQuery)
