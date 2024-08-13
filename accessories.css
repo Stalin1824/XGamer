@@ -71,25 +71,31 @@ span {
     }
     
     .cards-wrapper>div{
-        width: 25%;
+        width: 30%;
    } 
    
   }
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
     .cards-wrapper{
         gap: 8px;
+        width: 100%;
      }
   
   
     .cards-wrapper>div{
-        width: 95%;
+        width: 40%;
    } 
 
 
 }
 
 
+@media screen and (max-width: 500px) {
+    .cards-wrapper>div{
+        width: 48%;
 
+   } 
+}
